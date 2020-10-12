@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/styles.css" />
+    <title>Weather Wherever</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="city-name">
+        <input
+          type="text"
+          placeholder="City Name"
+          autofocus="on"
+          id="city-input"
+        />
+        <input type="submit" value="Find a City" />
+      </form>
+      <br />
+      <div class="clearfix">
+        <div style="float: left;">
+          <span>
+            <h4>Today's Forecast in</h4>
+            <h1 id="current-city"></h1>
+            <h2></h2>
+            <h3 id="temperature"></h3>
+          </span>
+        </div>
+      </div>
+      <div class="clearfix">
+        <div style="float: right;">
+          <div class="col">
+            <div class="row"><strong>Upcoming Weather Forecast</strong></div>
+            <div class="row">🌥Tuesday September 15 75°F/24°C</div>
+            <div class="row">🌨Wednesday September 16 70°F/21°C</div>
+            <div class="row">🌦Thursday September 17 68°F/19°C</div>
+            <div class="row">🌤Friday September 18 72°F/22°C</div>
+            <div class="row">🌤Saturday September 19 74°F/23°C</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
